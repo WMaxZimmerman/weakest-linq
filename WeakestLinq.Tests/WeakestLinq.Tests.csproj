@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.4.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.0.1" />
+    <PackageReference Include="NTrospection.CLI" Version="2.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WeakestLinq.Shared\WeakestLinq.Shared.csproj" />
+    <ProjectReference Include="..\WeakestLinq.DAL\WeakestLinq.DAL.csproj" />
+    <ProjectReference Include="..\WeakestLinq.ApplicationCore\WeakestLinq.ApplicationCore.csproj" />
+    <ProjectReference Include="..\WeakestLinq.Console\WeakestLinq.Console.csproj" />
+  </ItemGroup>
+
+</Project>
